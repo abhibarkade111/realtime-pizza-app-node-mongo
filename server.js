@@ -34,7 +34,7 @@ app.set('eventEmitter', eventEmitter)
 
 // Session config
 app.use(session({
-    secret: process.env.COOKIE_SECRET,
+    secret: 'thisismysceret',
     resave: false,
     store: mongoStore,
     saveUninitialized: false,
